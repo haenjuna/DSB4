@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: aquamarine;">
+  <object data="../04/product.pdf" width="100%" height="300" type=""></object>
+  <object data="../04/medias/flight.mp4" type=""></object>
+  <embed src="../04/medias/flight.mp4" type="">
+  <video src="../04/medias/flight.mp4" controls></video>
+  <audio src="../04/medias/spring.mp3" controls autoplay></audio>
+</body>
+</html>
