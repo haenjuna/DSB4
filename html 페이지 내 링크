@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div>
+  <a href="#top">처음으로</a>
+  <a href="#md">중간</a>
+  <a href="#end">끝으로</a></div>
+  <div style="height: 800px; background-color: blueviolet;">
+    <h1 id="top">part1</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div style="height: 800px; background-color: aqua;">
+    <h1 id="md">part2</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div style="height: 800px; background-color: blueviolet;">
+    <h1 id="end">part3</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div><a href="#top">처음으로</a><a href="#md">중간</a><a href="#end">끝으로</a></div>
+</body>
+</html>
