@@ -12,7 +12,9 @@
   <h1>random image</h1>
   <img src="https://picsum.photos/200/300?grayscale" alt="grayscale">
   <h1>흑백</h1>
-  <img src="https://picsum.photos/200/300/?blur" alt="blur">
-  <h1>blur</h1>
+  <div>
+    <img src="https://picsum.photos/200/300/?blur" alt="blur">
+    <h1>blur</h1>
+  </div>
 </body>
 </html>
