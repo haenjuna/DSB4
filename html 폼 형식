@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="register.html" autocomplete="on">
+      <fieldset>
+        <legend>상품선택</legend>
+        <!-- input type 교재 130p 참조 -->
+        <div><lable>아이디(6자이상) : <input type="text" name="id" id="id"></lable></div>
+        <div><label for="password">비밀먼호 : <input type="search" name="password" id="password"></label></div>
+        <div><label for="submit">submit : <input type="submit" name="submit" id="submit"></label></div>
+      </fieldset>
+      <fieldset>
+        <legend>배송정보</legend>
+        <div><lable for="address">주소 : <input type="text" name="address" id="address"></lable></div>
+        <div><label for="date">배송일 : <input type="date" name="date" id="date"></label></div>
+        <div><label for="tel">전화번호 : <input type="tel" name="tel" id="tel"></label></div>
+        <input type="radio">파손주의 <input type="radio">신속 <br>
+        <input type="checkbox">식품 <input type="checkbox">냉장 <br>
+      </fieldset>
+  </form>
+</body>
+</html>
