@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img src="../04/images/tangerines.jpg" alt="레드향">
+  <h1>레드향</h1>
+  <img src="https://picsum.photos/200/300" alt="random">
+  <h1>random image</h1>
+  <img src="https://picsum.photos/200/300?grayscale" alt="grayscale">
+  <h1>흑백</h1>
+  <img src="https://picsum.photos/200/300/?blur" alt="blur">
+  <h1>blur</h1>
+</body>
+</html>
