@@ -17,7 +17,8 @@
 <h1>blur</h1>
 <img src="notice-removebg-preview.png" alt="배경제거">
 <h1>배경 제거</h1>
-<img src="globe_3917561.svg" alt="svg">
+<img src="globe_3917561.svg" height="200px" alt="svg">
+<h1>svg</h1>
 </div>
 </body>
 </html>
