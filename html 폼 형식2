@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="#" autocomplete="on">
+    <div>
+      <input type="text" name="name" value="기본값" autofocus readonly />
+    </div>
+    <div>
+      <input type="text" name="email" placeholder="여기에 이메일 적으세요" autofocus required />
+    </div>
+    <!-- <input type="hidden" name="hiddendata" value="숨긴데이터"> -->
+    <div>
+      <input type="checkbox" name="item" value="item1" id="item1" checked /><label for="item1">item1</label>
+      <input type="checkbox" name="item" value="item2" id="item2" /><label for="item2">item2</label>
+      <input type="checkbox" name="item" value="item3" id="item3" /><label for="item3">item3</label>
+    </div>
+    <div>
+      <input type="radio" name="radiodata1" value="data1" id="radioitem1"/><label for="radioitem1">item1</label>
+      <input type="radio" name="radiodata2" value="data2" id="radioitem2"/><label for="radioitem2">item2</label>
+      <input type="radio" name="radiodata3" value="data3" id="radioitem3"/><label for="radioitem3">item3</label>
+    </div>
+    <div>
+      <label for="select">좋아하는 회사 선택</label>
+      <select name="select" id="select" size="4" multiple>
+        <option value="네이버">네이버</option>
+        <option value="카카오" selected>카카오</option>
+        <option value="라인">라인</option>
+        <option value="쿠팡">쿠팡</option>
+      </select>
+    </div>
+    <div><textarea name="text" id="" cols="30" rows="10" placeholder="내용 입력"></textarea></div>
+    <input type="submit" value="데이터 전송" />
+    <input type="reset" value="데이터 다시입력" />
+  </form>
+</body>
+
+</html>
