@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구매 페이지</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="image/mainicon.png" alt="mainicon" height="50" width="50">노트북 다나와</a>
+    <fieldset>
+      <legend>검색창</legend>
+      <input type="text" name="id" id="id" size="90">
+      <img src="image/magnifier.png" alt="돋보기" height="30" width="30">
+      <img src="image/stripe.png" alt="메뉴" height="30" width="30">
+    </fieldset>
+  </header>
+  <main>
+    <form action="purchase_complete.html">
+      <fieldset>
+        <h2>제품 선택</h2>
+        <div>
+          <label for="product_name"></label>제품명:
+          <select name="product_name" id="product_name">
+            <option value="Lenovo01">레노버 2023 게이밍 3 15ARH7 15.6 지포스 RTX4050</option>
+            <option value="LG">LG전자 2023 그램 15</option>
+            <option value="Lenovo02">IdeaPad Gaming 3 15ARH7</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>구매자 정보</h2>
+        <div>
+          <label for="user_name">이름</label>
+          <input type="text" name="user_name" id="user_name" required size="10">
+        </div>
+        <div><label for="user_email">이메일</label><input type="text" name="user_email" id="user_email" required size="30"></div>
+        <div><label for="user_phonenumber">연락처</label><input type="text" name="user_phonenumber" id="user_phonenumber"
+            required size="30"></div>
+        <div><label for="user_address">주소</label><input type="text" name="user_address" id="user_address" required size="30"></div>
+        <div><label for="request"></label>배송 요청사항</div>
+        <div><input type="text" name="request" id="request" size="50"></div>
+        <div><input type="submit" value="구매하기"> <input type="submit" value="취소"></div>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <fieldset>
+      <p>made by team6 : 배고프조</p>
+      <p>박현준 최세윤 이승수 변진석</p>
+      <p>회사소개 | 이용약관 | 개인정보처리방침</p>
+    </fieldset>
+  </footer>
+</body>
+
+</html>
