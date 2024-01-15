@@ -1,0 +1,15 @@
+#introduce{
+  width: 800px;
+  margin: 10px auto;
+  padding: 1px 1em 4px;  /*위, 양옆, 아래*/
+  border:  solid 1px;
+}
+.content{color: cornflowerblue;}
+
+.title{
+  text-align: center;
+}
+
+.text{
+  font-family: '나눔손글씨 붓'
+}

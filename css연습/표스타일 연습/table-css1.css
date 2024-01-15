@@ -1,0 +1,11 @@
+table{
+  caption-side: bottom;
+  border: solid 1px black;
+  border-spacing: 0px; /*표 사이간격*/
+  border-collapse: collapse; /*합칠지 말지*/
+}
+td,th{
+  border: 1px dotted black;
+  padding: 10px;
+  text-align: center;
+}
