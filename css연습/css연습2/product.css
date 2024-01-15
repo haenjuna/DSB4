@@ -1,0 +1,31 @@
+div.basic{
+  border: 1px solid;
+  width: 800px;
+  margin: 10px auto;
+}
+.textcenter{
+  text-align: center;
+}
+.content{
+  width: 600px;
+  margin: 10px auto;
+}
+table{
+  margin: 10px auto;
+}
+#description{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+#package{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+table, th, td {
+  border:1px solid #ccc;
+  border-collapse: collapse;
+}
+th, td { 
+  padding:10px 20px; 
+}
