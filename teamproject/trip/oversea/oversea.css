@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+/* 모든 요소에 기본 글꼴을 'Black Han Sans'로 지정하고, 다시 'Noto Sans KR'로 덮어쓰기 */
+* {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+  text-decoration-line: none;
+}
+
+body{
+  background-color: rgb(240, 240, 240);
+}
+
+/* 카로셀 컨테이너에 대한 스타일 */
+#carouselExampleIndicators {
+  max-width: 800px; /* 원하는 크기로 조절하세요 */
+  margin: auto; 
+}
+
+/* 카드의 크기 및 간격 */
+#card2 {
+  padding: 10px;   
+  width: 350px;
+}
+
+/* 카드 호버 시 살짝 커짐 */
+#card2:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* 카드 컨테이너 'cardbox'에 대한 스타일 */
+#cardbox {
+  width: 82%;
+  margin-bottom: 30px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+/* 'font' 아이디를 가진 요소에 대한 스타일 */
+#font {
+  margin-top: 50px;
+  margin-left: 15%;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+/* 두 줄이 넘아가는 문장은 ...으로 처리 */
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-cencept {
+  color: #80BCBD;
+}
+.card-text {
+  color: gray;
+}
+.card-price {
+  text-align: end;
+  font-size: x-large;
+}
+
+/* 예약 컨테이너에 대한 스타일 */
+.reservation {
+  margin: 10px auto;
+  padding: 20px;
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+/* 예약 컨테이너의 안의 모든 요소들의 간격 */
+.reservation > * {
+  margin: 10px;
+}
+.banner{
+  margin: auto;
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.banner1{
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:left;
+  background-image: url(img/plane.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #F3D7CA;
+  color: #FF6868;
+}
+
+.banner2{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:right;
+  background-color: #D9EDBF;
+  background-image: url(img/island.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}

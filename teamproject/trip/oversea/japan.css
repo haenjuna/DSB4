@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+/* 모든 요소에 기본 글꼴을 'Black Han Sans'로 지정하고, 다시 'Noto Sans KR'로 덮어쓰기 */
+* {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.navbar-brand, .nav-link {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+.card-body >p{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* 'Black Han Sans' 글꼴을 구글 폰트에서 불러옵니다. */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+/* 'Black Han Sans' 및 'Noto Sans KR' 글꼴을 구글 폰트에서 불러옵니다. */
+
+* {
+    font-family: 'Black Han Sans', sans-serif;
+    /* 모든 요소에 'Black Han Sans' 글꼴을 적용합니다. */
+    font-family: 'Noto Sans KR', sans-serif;
+    /* 모든 요소에 'Noto Sans KR' 글꼴을 추가로 적용합니다. */
+}
+
+#id {
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 10% auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 500px;
+    height: auto;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input_box {
+    width: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #ccc;
+    padding: 20px;
+}
+
+/* 태블릿? 용 */
+@media (min-width: 600px) and (max-width: 992px) {
+    body {
+        padding: 40px;
+    }
+
+    form {
+        max-width: 600px;
+    }
+}
+
+/* 모바일용 */
+@media (max-width: 599px) {
+    body {
+        padding: 5px;
+    }
+
+    form {
+        max-width: 80%;
+    }
+    label{
+        margin-right: 30px;
+    }
+    input{
+        margin-right: 30px;
+    } 
+
+    input[type=text],
+    input[type=password],
+    button {
+        max-width: 80%;
+        padding: 10px;
+        height: 10px;
+    }
+}

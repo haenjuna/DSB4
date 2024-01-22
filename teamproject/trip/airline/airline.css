@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* 'Black Han Sans' 글꼴을 구글 폰트에서 불러옵니다. */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+/* 'Black Han Sans' 및 'Noto Sans KR' 글꼴을 구글 폰트에서 불러옵니다. */
+
+*{
+  font-family: 'Black Han Sans', sans-serif;
+  /* 모든 요소에 'Black Han Sans' 글꼴을 적용합니다. */
+  font-family: 'Noto Sans KR', sans-serif;
+  /* 모든 요소에 'Noto Sans KR' 글꼴을 추가로 적용합니다. */
+}
+
+#carouselExampleIndicators{
+  max-width: 800px; /* 원하는 크기로 조절하세요 */
+  /* 캐러셀의 최대 너비를 800px로 설정합니다. */
+  margin: auto; 
+  /* 캐러셀을 가운데에 배치합니다. */
+}
+
+#card2{
+  padding: 10px;
+  /* 카드의 안쪽 여백을 10px로 설정합니다. */
+  width: 350px;
+  /* 카드의 너비를 350px로 설정합니다. */
+  animation-name: scaleup;
+  /* 카드에 'scaleup' 애니메이션을 적용합니다. */
+  animation-duration: 0.2s;
+  /* 애니메이션 지속 시간을 0.2초로 설정합니다. */
+}
+
+#card2:hover{
+  transform: scale(1.05);
+  /* 카드에 마우스를 올리면 5% 확대됩니다. */
+  z-index: 2;
+  /* 카드의 z-index를 2로 설정하여 다른 요소들 위에 배치합니다. */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  /* 주석 처리된 박스 그림자 스타일 */
+}
+
+h2{
+  font-family: 'Black Han Sans', sans-serif;
+  /* h2 태그에 'Black Han Sans' 글꼴을 적용합니다. */
+  margin-top: 5%;
+  margin-bottom: 0%;
+  margin-left: 12%;
+  /* 상단 마진 5%, 하단 마진 0%, 왼쪽 마진 12%를 적용합니다. */
+}
+
+#cardbox{
+  width: 80%;
+  /* 카드박스의 너비를 전체의 80%로 설정합니다. */
+  margin-bottom: 30px;
+  margin: auto;
+  /* 카드박스를 가운데에 배치하고, 아래쪽 여백을 30px로 설정합니다. */
+  flex-wrap: wrap;
+  /* flex 아이템들이 여러 줄로 감싸지도록 설정합니다. */
+  display: flex;
+  /* flex 박스 모델을 적용합니다. */
+  justify-content: center;
+  /* 아이템들을 가운데 정렬합니다. */
+  border-radius: 20px;
+  /* 모서리를 둥글게 만듭니다. */
+}
+
+/* Card 관련 CSS */
+.card-concept{
+  color: #80BCBD;
+  /* 카드 콘셉트의 텍스트 색상을 설정합니다. */
+}
+.card-text{
+  color: gray;
+  /* 카드 텍스트의 색상을 회색으로 설정합니다. */
+}
+.card-price{
+  text-align: end;
+  /* 가격 텍스트를 오른쪽 정렬합니다. */
+  font-size: x-large;
+  /* 폰트 크기를 매우 크게 설정합니다. */
+}
+p{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* 두 줄로 텍스트를 제한합니다. */
+  -webkit-box-orient: vertical;
+  /* 상자의 방향을 수직으로 설정합니다. */
+  overflow: hidden;
+  /* 넘치는 내용은 숨깁니다. */
+}
+
+/* 예매 관련 CSS */
+.reservation{
+  margin: 10px auto;
+  /* 상하 여백을 10px, 좌우 여백을 자동으로 설정합니다. */
+  padding: 20px;
+  /* 내부 여백을 20px로 설정합니다. */
+  width: 80%;
+  /* 너비를 전체의 80%로 설정합니다. */
+  border: 1px solid gray;
+  /* 테두리를 회색으로 설정합니다. */
+  border-radius: 20px;
+  /* 모서리를 둥글게 만듭니다. */
+  flex-wrap: wrap;
+  /* flex 아이템들이 여러 줄로 감싸지도록 설정합니다. */
+  display: flex;
+  /* flex 박스 모델을 적용합니다. */
+  justify-content: center;
+  /* 아이템들을 가운데 정렬합니다. */
+  background-color: white;
+}
+
+.reservation button[type=submit]{
+  margin-left: 3%;
+  /* 버튼의 왼쪽 마진을 3%로 설정합니다. */
+  border-radius: 5px;
+  /* 버튼의 모서리를 둥글게 만듭니다. */
+}
+
+.reservation p{
+  margin-right: auto;
+  /* 텍스트의 오른쪽 마진을 자동으로 설정합니다. */
+}
+
+body{
+  background-color: rgb(240, 240, 240);
+}
+.banner{
+  margin: 50px auto;
+  width: 830px;
+}
+.banner1{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:left;
+  background-image: url(airline_image/plane.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #F3D7CA;
+  color: #FF6868;
+}
+
+.banner2{
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:right;
+  background-color: #D9EDBF;
+  background-image: url(airline_image/island.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}

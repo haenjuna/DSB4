@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+
+@keyframes colorChange { /*애니메이션 효과를 주기위해 정의*/
+  0% {
+    background-color: gold;
+  }
+  50% {
+    background-color: coral;
+  }
+  100%{
+    background-color: gold;
+  }
+}
+
+* {
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#carouselExampleIndicators {
+  max-width: 50rem;
+  max-height: 37.5rem;
+  margin: auto;
+}
+
+.carousel-inner {
+  max-width: 50rem;
+  max-height: 37.5rem;
+  margin: auto;
+}
+
+.maincard {
+  margin: auto;
+  width: 50rem;
+  height: 25rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  /* box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.5); */
+}
+
+h1 {
+  text-align: center;
+}
+
+.maincard h2 {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 0px auto;
+}
+
+.login_join {
+  display: flex;
+}
+
+#linkpage_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100%;
+  /*최소 넓이 지정을 통해 화면 꽉채우게!*/
+  animation: colorChange 10s infinite;
+}
+
+#linkpage_1 ul {
+  list-style: none;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0;
+}
+
+#linkpage_1 ul li {
+  flex-direction: row;
+  display: inline-block;
+  padding: 30px;
+}
+
+#linkpage_1 ul li a {
+  text-decoration-line: none;
+  color: #3D3B40;
+}
+
+#linkpage_1>* {
+  margin: 1.25rem;
+}
+
+#search_btn {
+  justify-content: center;
+}
+
+.login_join {
+  flex-direction: row-reverse;
+}
+
+.login_join>* {
+  margin: .9375rem;
+}
+
+button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: .0625rem solid #3D3B40;
+  color: #3D3B40;
+  background-color: #ffffff;
+  border-radius: .1875rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}

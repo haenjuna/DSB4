@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* 'Black Han Sans' 글꼴을 구글 폰트에서 불러옵니다. */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+/* 'Black Han Sans' 및 'Noto Sans KR' 글꼴을 구글 폰트에서 불러옵니다. */
+
+*{
+  font-family: 'Black Han Sans', sans-serif;
+  /* 모든 요소에 'Black Han Sans' 글꼴을 적용합니다. */
+  font-family: 'Noto Sans KR', sans-serif;
+  /* 모든 요소에 'Noto Sans KR' 글꼴을 추가로 적용합니다. */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#ageOutput{
+    font-size: xx-large;
+}
+body {
+    background: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    margin: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+li{
+    list-style: none;
+}
+
+input[type=radio]{
+    margin-right: 30px;
+}
+input[type=text], input[type=email], input[type=password] {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn{
+    margin-left: 45%;
+}
+label {
+    font-size: x-large;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* 태블릿? 용 */
+@media (min-width: 600px) and (max-width: 992px) {
+    body {
+        padding: 100px;
+    
+    }
+    form {
+        max-width: 800px;
+    }
+}
+
+/* 모바일용 */
+@media (max-width: 599px) {
+    body {
+        font-size: smaller;
+        padding: 10px;
+    }
+    form {
+        max-width: 100%;
+    }
+    input[type=text], input[type=email], input[type=password], button {
+        padding: 15px;
+        
+        height: 40px;
+    }
+}

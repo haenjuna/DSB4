@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
+*{
+  font-family: 'Black Han Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+  background-color: rgb(240, 240, 240);
+}
+
+#carouselExampleIndicators{
+  max-width: 800px;
+  margin: auto; 
+}
+
+#card2{
+  padding: 10px;   
+	width:350px;
+  animation-name: scaleup;
+  animation-duration: 0.2s;
+}
+
+.card2:hover{
+  transform: scale(1.05);
+  z-index: 2;
+}
+#cardbox{
+  width: 82%;
+  margin-bottom: 30px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#font{
+  margin-top: 50px;
+  margin-left: 15%;
+  font-family: 'Black Han Sans', sans-serif;
+}
+.cardbox p{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-cencept{
+  color: #80BCBD;
+}
+
+.card-text{
+  color: gray
+}
+
+.card-price{
+  text-align:end;
+  font-size:x-large
+}
+.card-button{
+  position:relative;
+  width: 345px;
+  height:100px;
+  padding: 10px;
+  margin: 0px auto;
+}
+.card-button button{
+  display: inline-box;
+  width: 100px;
+  line-height: 13px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 60px;
+  padding: 10px 30px;
+}
+.card-button button:hover{
+  background-color: black;
+  color: white;
+}
+.btn1{position:absolute;
+  top:10px;
+  left:10px;}
+.btn2{position:absolute;
+  top:10px;
+  left:120px;}
+.btn3{position:absolute;
+  top:10px;
+  left:230px;}
+.btn4{position:absolute;
+  top:50px;
+  left:10px;}
+.btn5{position:absolute;
+    top:50px;
+    left:120px;}
+.btn6{position:absolute;
+  top:50px;
+  left:230px;}
+
+form{
+  margin:10px auto;
+  padding: 20px;
+  max-width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: white;
+}
+
+form button{
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+.banner{
+  margin: auto;
+  width: 80%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.banner1{
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:left;
+  background-image: url(image/plane.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #F3D7CA;
+  color: #FF6868;
+}
+
+.banner2{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  float:right;
+  background-color: #D9EDBF;
+  background-image: url(image/island.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+@media screen (min-width:425px) {
+  form{
+    width:370px auto;
+  }
+}
