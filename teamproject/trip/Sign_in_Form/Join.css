@@ -17,6 +17,7 @@
 }
 #ageOutput{
     font-size: xx-large;
+    padding: auto;
 }
 body {
     background: #ccc;
