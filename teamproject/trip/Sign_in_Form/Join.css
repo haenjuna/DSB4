@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR&display=swap');
 /* 'Black Han Sans' 및 'Noto Sans KR' 글꼴을 구글 폰트에서 불러옵니다. */
-
 *{
   font-family: 'Black Han Sans', sans-serif;
   /* 모든 요소에 'Black Han Sans' 글꼴을 적용합니다. */
@@ -27,7 +26,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 form {
     margin: 0;
     padding: 20px;
@@ -40,7 +38,6 @@ form {
 li{
     list-style: none;
 }
-
 input[type=radio]{
     margin-right: 30px;
 }
@@ -72,7 +69,6 @@ label {
         max-width: 800px;
     }
 }
-
 /* 모바일용 */
 @media (max-width: 599px) {
     body {
