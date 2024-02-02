@@ -1,0 +1,416 @@
+@import "reset.css";
+@import "var.css";
+
+main {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+}
+
+/* ODH */
+
+.desktop {
+  display: none;
+}
+
+.dh {
+  background-color: var(--color-black);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.heros-container {
+  max-width: 1200px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hero {
+  height: 33%;
+  background-color: #2a2a2a;
+  border: 2px solid var(--color-black);
+  position: relative;
+  overflow: hidden;
+}
+
+.slideBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(100%);
+  background-color: rgba(1, 1, 1, 0.6);
+}
+
+.slideBox.spiderman {
+  transform: translateX(-100%);
+}
+
+.animation-index-slideIn-right {
+  animation: indexSlideInRight 1s ease-out forwards;
+}
+
+.animation-index-slideOut-right {
+  animation: indexSlideOutRight 1s ease-in forwards;
+}
+
+.animation-index-slideIn-left {
+  animation: indexSlideInLeft 1s ease-out forwards;
+}
+
+.animation-index-slideOut-left {
+  animation: indexSlideOutLeft 1s ease-in forwards;
+}
+
+@keyframes indexSlideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes indexSlideOutRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes indexSlideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes indexSlideOutLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.mobile .hero {
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mobile .hero.ironman {
+  background-image: url("../images/dh/ironman/index1.png");
+}
+.mobile .hero.spiderman {
+  background-image: url("../images/dh/spiderman/index1.png");
+}
+.mobile .hero.dr-strange {
+  background-image: url("../images/dh/dr-strange/index1.png");
+}
+
+.mobile .slideBox {
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.mobile .slideBox.ironman {
+  background-image: url("../images/dh/ironman/index2.png");
+}
+.mobile .slideBox.spiderman {
+  background-image: url("../images/dh/spiderman/index2.png");
+}
+.mobile .slideBox.dr-strange {
+  background-image: url("../images/dh/dr-strange/index2.png");
+}
+
+.mobile .index-logo {
+  width: 40%;
+  height: 100%;
+  background-position: top;
+  position: absolute;
+  top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mobile .index-logo.ironman {
+  background-image: url("../images/dh/ironman/index-logo.png");
+  right: 0;
+}
+.mobile .index-logo.spiderman {
+  background-image: url("../images/dh/spiderman/index-logo.png");
+  left: 0;
+  top: 4px;
+}
+.mobile .index-logo.dr-strange {
+  background-image: url("../images/dh/dr-strange/index-logo.png");
+  right: 0;
+  top: 24px;
+}
+
+/* for desktop */
+.heros-container.desktop {
+  flex-direction: row;
+}
+.desktop .hero {
+  width: 33%;
+  height: 100%;
+}
+.desktop .slideBox {
+  transform: translateY(100%);
+}
+
+.animation-index-slideUp {
+  animation: indexSlideUp 1s ease-out forwards;
+}
+.animation-index-slideDown {
+  animation: indexSlideDown 1s ease-in forwards;
+}
+
+@keyframes indexSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes indexSlideDown {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.desktop .hero,
+.desktop .slideBox {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.desktop .hero.ironman {
+  background-image: url("../images/dh/ironman/index1.png");
+  filter: contrast();
+}
+
+.desktop .slideBox.ironman {
+  background-image: url("../images/dh/ironman/index2.png");
+}
+
+.desktop .hero.spiderman {
+  background-image: url("../images/dh/spiderman/index1.png");
+  filter: contrast();
+}
+
+.desktop .slideBox.spiderman {
+  background-image: url("../images/dh/spiderman/index2.png");
+}
+
+.desktop .hero.dr-strange {
+  background-image: url("../images/dh/dr-strange/index1.png");
+  filter: contrast();
+}
+
+.desktop .slideBox.dr-strange {
+  background-image: url("../images/dh/dr-strange/index2.png");
+}
+
+.desktop .index-logo {
+  background-position: bottom;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.desktop .index-logo.ironman {
+  background-image: url("../images/dh/ironman/index-logo.png");
+}
+.desktop .index-logo.spiderman {
+  background-image: url("../images/dh/spiderman/index-logo.png");
+  bottom: -10px;
+}
+.desktop .index-logo.dr-strange {
+  background-image: url("../images/dh/dr-strange/index-logo.png");
+  bottom: 40px;
+}
+
+@media screen and (min-width: 700px) {
+  .mobile {
+    display: none;
+  }
+
+  .heros-container.desktop {
+    display: flex;
+  }
+}
+
+/*PHJ css*/
+h1,
+#left,
+#right {
+  color: var(--color-white);
+}
+
+.hj {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-black);
+  align-items: center;
+}
+
+#carousel-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 7.5;
+  background-color: var(--color-black);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+#left {
+  top: 50%;
+  left: 20px;
+}
+
+#right {
+  top: 50%;
+  right: 20px;
+}
+
+#carousel {
+  width: 80%;
+  max-width: 1000px;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+}
+#mvtitle {
+  margin: 15px 20px 10px;
+  max-width: 1300px;
+  height: 40px;
+  padding: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: x-large;
+  position: relative;
+}
+
+#mvtitle::before {
+  left: 100px;
+  top: 17px;
+}
+#mvtitle::after {
+  left: 68px;
+}
+
+#mvtitle::before,
+#mvtitle::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+/* 박주희 */
+.container-jh {
+  background-color: var(--color-white);
+}
+.container-jh h1 {
+  margin-top: 1rem;
+  display: block;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+.collection {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.collection-box {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.captin:last-child,
+.doctor:last-child,
+.iron:last-child,
+.thor:last-child,
+.spider:last-child {
+  display: none;
+}
+
+.collection p {
+  font-family: "Black Han Sans", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+  .container-jh h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .captin,
+  .thor {
+    display: none;
+  }
+  #captin01,
+  #thor01 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .collection {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,149 @@
+@import "../reset.css";
+@import "../var.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.maxwidth {
+  margin: auto;
+  max-width: 1300px;
+}
+main {
+  padding-top: 52px;
+  margin-bottom: 64px;
+}
+
+#main {
+  background-color: var(--color-black);
+}
+
+#main_img {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#scroll {
+  max-width: 98%;
+  height: 260px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  overflow-x: scroll;
+  /* 넘친 텍스트 스크롤으로 처리 */
+}
+#scroll::-webkit-scrollbar {
+  height: 8px;
+}
+#scroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+}
+#scroll::-webkit-scrollbar-track {
+  background-color: var(--color-grey);
+  box-shadow: inset 0px 0px 5px var(--color-light-grey);
+}
+
+.card {
+  width: 140px;
+  height: 85%;
+  margin: 5px 10px 0px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.card-img {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-body {
+  width: 100%;
+  text-align: center;
+}
+.card-title {
+  font-family: "Black Han Sans", sans-serif;
+  color: #2f3542;
+  padding: 10px 0px 0px;
+  height: 40px;
+}
+#title {
+  margin: 15px 20px 10px;
+  max-width: 1300px;
+  height: 40px;
+  padding: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: x-large;
+  position: relative;
+}
+
+#title::before {
+  left: 70px;
+}
+
+#title::before,
+#title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+a {
+  text-decoration-line: none;
+}
+
+#gray {
+  color: var(--color-grey);
+  font-size: small;
+}
+
+#intro {
+  padding: 20px;
+}
+
+#movie_title {
+  padding: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 40px;
+}
+
+#gallery {
+  width: 82%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.poster-img {
+  width: 235px;
+  margin: 10px;
+}
+#bg-black {
+  background-color: var(--color-black);
+}
+
+#intro {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.white {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 92px;
+  }
+}

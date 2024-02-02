@@ -1,0 +1,112 @@
+@import "../reset.css";
+@import "../var.css";
+@import "../components/header.css";
+@import "../components/footer.css";
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--color-black);
+}
+main {
+  padding-top: 52px;
+  margin: 0 var(--margin-side);
+}
+#tab {
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: rgba(2,2,2);
+}
+#tab-box {
+  display: flex;
+  flex-direction: column;
+  padding:3%;
+}
+#box01 img {
+  width: 100px;
+  margin-bottom: 16px;
+}
+#box02 {
+  font-family: 'GmarketSansMedium';
+  font-weight: bold;
+  font-size: larger;
+  color: lightgray;
+  line-height: 2rem;
+}
+#box02 button {
+  padding: 3px 5px;
+  color: var(--color-white);
+  background-color: red;
+  border-radius: 5px;
+  font-family: 'GmarketSansMedium';
+  font-weight: bold;
+}
+#product-info {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 1rem;
+  font-family: 'GmarketSansMedium';
+  font-weight: bold;
+  color: lightgrey;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+#contents-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+#contents-box .info {
+  font-size: small;
+}
+#contents-box h4 {
+  font-family: 'GmarketSansMedium';
+  color: darkgrey;
+}
+#contents-box span {
+  font-family: 'GmarketSansMedium';
+  color: darkgrey;
+}
+#photo-box img {
+  width: 100%
+}
+#review-box {
+  display: flex;
+  flex-direction: column;
+}
+.comments {
+  padding: 2%;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.comments div i {
+  color: goldenrod;
+}
+.comments div span {
+  color: var(--color-black);
+  font-size: small;
+}
+.question-box button {
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+  color: lightgrey;
+  font-family: 'GmarketSansMedium';
+}
+
+@media screen and (min-width:800px) {
+  main {
+    padding-top: 92px;
+  }
+  #contents-box .info {
+    font-size: medium;
+  }
+}

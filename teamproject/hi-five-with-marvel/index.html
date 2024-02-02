@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/fccb424d55.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MARVEL</title>
+  </head>
+  <body>
+    <div class="nav-menu">
+      <button id="close">X</button>
+      <ul>
+        <li>
+          <span><a href="./html/movies/movie.html">MOVIES</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+        <li>
+          <span><a href="./html/heros.html">HEROS</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+        <li>
+          <span><a href="./html/goods.html">GOODS</a></span
+          ><span class="menu-arrow">❯</span>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-menu2">
+      <button id="close2"><</button>
+      <ul>
+        <li>
+          <span><a href="./html/movies/ironman.html">IRONMAN</a></span>
+        </li>
+        <li>
+          <span><a href="./html/movies/spiderman.html">SPIDERMAN</a></span>
+        </li>
+        <li>
+          <span><a href="./html/movies/doctor.html">DR.STRANGE</a></span>
+        </li>
+        <li><span>THOR</span></li>
+        <li><span>HULK</span></li>
+        <li><span>BLACKWIDOW</span></li>
+      </ul>
+    </div>
+    <header>
+      <div class="nav-top-container">
+        <div class="nav-top-start">
+          <button class="mobile" id="open">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </button>
+        </div>
+        <div class="nav-top-mid">
+          <div class="nav-top-mid__start desktop">
+            <i class="fa-solid fa-globe"></i>
+            <a class="login"></a>LOGIN<span>|</span><a class="join">JOIN</a>
+          </div>
+          <div class="nav-top-mid__mid">
+            <a href="./index.html"
+              ><span class="nav-top-title">MARVEL</span></a
+            >
+          </div>
+          <div class="nav-top-mid__end desktop">
+            <div class="nav-top__subscribe">
+              <span>UNLIMITED </span><span>SUBSCRIBE</span>
+            </div>
+            <div class="nav-top__search">
+              <button>
+                <i class="fas fa-magnifying-glass fa-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-top-end">
+          <button class="mobile">
+            <i class="fas fa-magnifying-glass fa-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div class="nav-bottom-conatiner desktop">
+        <div class="nav-bottom-start"></div>
+        <div class="nav-bottom-mid">
+          <ul>
+            <a href="./html/movies/movie.html"><li>MOVIES</li></a>
+            <a href="./html/heros.html"><li>HEROS</li></a>
+            <a href="./html/goods.html"><li>GOODS</li></a>
+            <a href="#"><li>NEWS</li></a>
+            <a href="#"><li>TV SHOWS</li></a>
+            <a href="#"><li>GAMES</li></a>
+            <a href="#"><li>VIDEOS</li></a>
+            <a href="#"><li>MORE</li></a>
+          </ul>
+        </div>
+        <div class="nav-bottom-end"></div>
+      </div>
+    </header>
+    <main>
+      <div class="container hj">
+        <div id="carousel-wrap">
+          <div class="arrow" id="left">&lang;</div>
+          <div id="carousel"></div>
+          <div class="arrow" id="right">&rang;</div>
+        </div>
+        <a href="html/movies/movie.html"><h1 id="mvtitle">WATCH MOVIES</h1></a>
+      </div>
+      <div class="container dh">
+        <div class="heros-container mobile">
+          <div class="hero ironman">
+            <a
+              ><div class="slideBox ironman">
+                <div class="index-logo ironman"></div></div
+            ></a>
+          </div>
+          <div class="hero spiderman">
+            <a
+              ><div class="slideBox spiderman">
+                <div class="index-logo spiderman"></div></div
+            ></a>
+          </div>
+          <div class="hero dr-strange">
+            <a
+              ><div class="slideBox dr-strange">
+                <div class="index-logo dr-strange"></div></div
+            ></a>
+          </div>
+        </div>
+        <div class="heros-container desktop">
+          <div class="hero ironman">
+            <a href="./html/heros.html#ironman"
+              ><div class="slideBox ironman">
+                <div class="index-logo ironman"></div></div
+            ></a>
+          </div>
+          <div class="hero spiderman">
+            <a href="./html/heros.html#spiderman"
+              ><div class="slideBox spiderman">
+                <div class="index-logo spiderman"></div></div
+            ></a>
+          </div>
+          <div class="hero dr-strange">
+            <a href="./html/heros.html#dr-strange"
+              ><div class="slideBox dr-strange">
+                <div class="index-logo dr-strange"></div></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-jh">
+        <h1><a href="./html/goods.html">MARVEL COLLECTION</a></h1>
+        <div class="collection">
+          <div class ="collection-box">
+            <div id="captin01" class="captin"><a href="./html/products/ironman.html"><img src="./images/jh/index/captin.png" alt="..."></a></div>
+            <div id="captin02" class="captin"><p>CAPTIN AMERICA</p></div>
+            <div id="captin03" class="captin"><img src="" alt="..."></div>
+          </div>
+          <div class ="collection-box">
+            <div id="doctor01" class="doctor"><a href="./html/products/ironman.html"><img src="./images/jh/index/doctor.png" alt="..."></a></div>
+            <div id="doctor02" class="doctor"><p>DOCTOR STRANGE</p></div>
+            <div id="doctor03" class="doctor"><img src="" alt="..."></div>
+          </div>
+          <div class ="collection-box">
+            <div id="iron01" class="iron"><a href="./html/products/ironman.html"><img src="./images/jh/index/iron.png" alt="..."></a></div>
+            <div id="iron02" class="iron"><p>IRONMAN</p></div>
+            <div id="iron03" class="iron"><img src="" alt="..."></div>
+          </div>
+          <div class ="collection-box">
+            <div id="spider01" class="spider"><a href="./html/products/ironman.html"><img src="./images/jh/index/spider.png" alt="..."></a></div>
+            <div id="spider02" class="spider"><p>SPIDERMAN</p></div>
+            <div id="spider03" class="spider"><img src="" alt="..."></div>
+          </div>
+          <div class ="collection-box">
+            <div id="thor01" class="thor"><a href="./html/products/ironman.html"><img src="./images/jh/index/thor.png" alt="..."></a></div>
+            <div id="thor02" class="thor"><p>THOR</p></div>
+            <div id="thor03" class="thor"><img src="" alt="..."></div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div id="section1" class="foot">
+          <span>M</span>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.marvel.com/corporate/about"
+                  >ABOUT MARVEL</a
+                >
+              </li>
+              <li><a href="https://help.marvel.com/hc/en-us">HELP/FAQS</a></li>
+              <li>
+                <a
+                  href="https://jobs.disneycareers.com/search-jobs?orgIds=391-1635-24091&ascf=[{%22key%22:%22custom_fields%252EIndustryCustomField%22,%22value%22:%22Marvel%20Entertainment%22}]"
+                  >CAREERS</a
+                >
+              </li>
+              <li>
+                <a href="https://www.marvel.com/corporate/interns"
+                  >INTERNSHIPS</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.marvel.com/corporate/advertising"
+                  >ADVERTISING</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.disneyplus.com/ko-kr/brand/marvel?cid=DTCI-Synergy-Marvel-Site-Acquisition-Library-US-Marvel-NA-EN-NavFooter-Marvel_DisneyPlus_NavFooter_Evergreen-NA"
+                  >DISNEY+</a
+                >
+              </li>
+              <li><a href="https://www.marvelhq.com/">MARVELHQ.COM</a></li>
+              <li>
+                <a
+                  href="https://www.marvel.com/signin?referer=http%3A%2F%2Fwww.marvel.com%2Fredeem"
+                  >REDEEM DIGITAL COMICS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav id="section2" class="foot">
+          <div>
+            <div id="sectionwrap1">
+              <div>
+                <figure>
+                  <i class="fab fa-forumbee fa-2xl"></i>
+                </figure>
+              </div>
+              <div id="first">
+                <a
+                  href="https://www.marvel.com/insider?cid=Dcom_navigation_20200929_insider_footer"
+                >
+                  <h4>MARVEL INSIDER</h4>
+                  <p>Get Rewarded for Being a Marvel Fan</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div id="sectionwrap2">
+              <div>
+                <figure>
+                  <i class="fab fa-freebsd fa-2xl"></i>
+                </figure>
+              </div>
+              <div id="second">
+                <a
+                  href="https://www.marvel.com/unlimited?cid=dcom_navigation_20220712_unlimited_footer"
+                >
+                  <h4>MARVEL UNLIMITED</h4>
+                  <p>Access Over 30,000+ Digital Comics</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="section3" class="foot">
+          <h4>FOLLOW MARVEL</h4>
+          <nav>
+            <ul id="sns">
+              <li>
+                <a href="https://www.facebook.com/Marvel/">
+                  <i class="fab fa-facebook-square fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/marvel">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/marvel/">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="https://marvelentertainment.tumblr.com/">
+                  <i class="fab fa-tumblr fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/marvel">
+                  <i class="fab fa-youtube fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.co.kr/marvelofficial/_saved">
+                  <i class="fab fa-pinterest fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section>
+        <div id="section4" class="foot">
+          <nav>
+            <a href="https://disneytermsofuse.com/">Terms of Use |</a>
+            <a
+              href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/"
+              >Privacy Policy |</a
+            >
+            <a
+              href="https://preferences-mgr.truste.com/?type=disneycolor&affiliateId=115"
+              >Interest-Based Ads |</a
+            >
+            <a href="https://www.marvel.com/corporate/license_tou"
+              >License Agreement |</a
+            >
+            <span>@2024 MARVEL</span>
+          </nav>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/components/header.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

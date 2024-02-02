@@ -1,0 +1,227 @@
+@import "reset.css";
+@import "var.css";
+@import "../css/components/header.css";
+
+main {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans KR";
+  background-color: var(--color-white);
+}
+
+.title {
+  font-size: 2rem;
+  padding: 16px var(--margin-side);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+header a {
+  color: var(--color-white);
+}
+
+.title::before {
+  left: 53px;
+}
+
+.title::before,
+.title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.hero-info-container {
+  background-color: var(--color-black);
+  margin-bottom: 64px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  align-self: center;
+}
+
+.background-image {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.hero-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 4px;
+  font-family: "Black Han Sans";
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.hero-info {
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero-desc {
+  word-break: break-all;
+  color: var(--color-white);
+  line-height: 1.4;
+  margin: 0px var(--margin-side);
+}
+
+.actor-name {
+  font-family: "Black Han Sans";
+  color: rgb(197, 57, 32);
+}
+
+.actor-image {
+  width: 100px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.actor-info-container {
+  cursor: pointer;
+  border: 2px solid var(--color-grey);
+  margin-bottom: 64px;
+  padding: 16px;
+  box-shadow: 0 8px 12px 1px rgba(1, 1, 1, 0.4);
+  margin-left: var(--margin-side);
+  margin-right: var(--margin-side);
+  max-width: 800px;
+}
+
+.actor-meta {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 8px;
+}
+
+.actor-name {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(197, 57, 32);
+}
+
+.actor-info {
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgb(1, 1, 1, 0.6);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Ironman */
+
+.background-image.ironman {
+  background-image: url("../images/dh/ironman/background.jpg");
+}
+
+.hero-image.ironman {
+  background-image: url("../images/dh/ironman/ironman.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.actor-image.ironman {
+  background-image: url("../images/dh/ironman/actor.jpeg");
+  float: left;
+}
+
+/* Spiderman */
+
+.background-image.spiderman {
+  background-image: url("../images/dh/spiderman/background.jpg");
+}
+
+.hero-image.spiderman {
+  background-image: url("../images/dh/spiderman/spiderman.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+.actor-image.spiderman {
+  background-image: url("../images/dh/spiderman/actor.jpeg");
+  float: left;
+}
+
+/* Dr.Strange */
+
+.background-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/background.jpg");
+}
+
+.hero-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/dr-strange.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: heroFadeIn 1s ease-in;
+}
+
+.actor-image.dr-strange {
+  background-image: url("../images/dh/dr-strange/actor.jpeg");
+  float: left;
+}
+
+@media screen and (min-width: 760px) {
+  .hero-info-container {
+    flex-direction: row;
+  }
+  .hero-info {
+    max-width: calc(100% - 310px);
+  }
+
+  .actor-info {
+    font-size: 1rem;
+  }
+
+  .background-image {
+    margin-left: var(--margin-side);
+  }
+  main {
+    padding-top: 92px;
+  }
+}

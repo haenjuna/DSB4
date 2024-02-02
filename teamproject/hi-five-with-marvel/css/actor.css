@@ -1,0 +1,186 @@
+@import "reset.css";
+@import "var.css";
+
+main {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: "Noto Sans KR";
+}
+
+.title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2rem;
+  padding: 16px var(--margin-side);
+  font-weight: 900;
+}
+
+.title::before {
+  left: 53px;
+}
+
+.title::before,
+.title::after {
+  background-color: #c6a972;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform: rotate(-45deg) skewX(45deg);
+  width: 20px;
+}
+
+.screenshot-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.screenshot {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-btn-left,
+.carousel-btn-right {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(1, 1, 1, 0.6);
+  padding: 0px 4px;
+}
+
+.carousel-btn-left {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn-right {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  background-color: var(--color-white);
+}
+
+.info {
+  max-width: 1300px;
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  word-break: break-all;
+  position: absolute;
+  width: 80%;
+  top: -32px;
+  height: 364px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.works-container {
+  padding-top: 64px;
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 64px;
+}
+
+.work {
+  margin-bottom: 16px;
+  display: flex;
+  margin-right: 8px;
+  height: 240px;
+}
+
+.work:first-child {
+  margin-left: var(--margin-side);
+}
+
+.work:last-child {
+  margin-right: var(--margin-side);
+}
+
+.work-poster {
+  margin-right: 8px;
+}
+
+.work-info {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-title {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.work-synopsis {
+  font-size: 0.8rem;
+}
+
+.work a {
+  display: block;
+}
+
+.works-container::-webkit-scrollbar {
+  height: 8px;
+}
+.works-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-red);
+}
+.works-container::-webkit-scrollbar-track {
+  background-color: var(--color-grey);
+  box-shadow: inset 0px 0px 5px var(--color-light-grey);
+}
+
+/* Flying hero */
+
+.fly {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  left: calc(50vw - 40px);
+  top: calc(50vw - 40px);
+  z-index: 200;
+}
+
+.fly.ironman {
+  background-image: url("../images/dh/ironman/fly.png");
+}
+.fly.spiderman {
+  background-image: url("../images/dh/spiderman/fly.png");
+}
+.fly.dr-strange {
+  background-image: url("../images/dh/dr-strange/fly.png");
+}
+
+@media screen and (min-width: 800px) {
+  .info {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding-top: 92px;
+  }
+}
