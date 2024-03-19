@@ -1,0 +1,69 @@
+/* 스타일링 코드 */
+body {
+  margin-left: 35%;
+  margin-top: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 380px;
+  width: 400px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 3px solid rgb(173, 173, 173);
+
+}
+
+form {
+  margin-top: 20px;
+  display: flex; /* 가로 정렬을 위해 플렉스 박스로 설정 */
+  flex-direction: column; /* 세로 방향으로 아이템을 정렬 */
+  align-items: center; /* 아이템을 수직 중앙으로 정렬 */
+}
+
+.logintext{
+  padding-bottom: 60px;
+}
+
+.row {
+  display: flex; /* 가로 정렬을 위해 플렉스 박스로 설정 */
+  align-items: center; /* 아이템을 수직 중앙으로 정렬 */
+}
+
+#Emailtext{
+  margin-right: 48px;
+}
+
+.label {
+  margin-right: 20px; /* 라벨과 입력 요소 사이의 간격 조정 */
+  font-weight: 700;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 120px;
+  background-color: #90B1DB;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+#register{
+  padding: 10px 113px;
+  margin-top: 20px;
+  background-color: #90B1DB;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 4px;
+}

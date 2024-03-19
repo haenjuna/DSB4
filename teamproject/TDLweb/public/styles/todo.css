@@ -1,0 +1,85 @@
+/* 전체 페이지에 대한 기본 스타일 설정 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* To-Do List 컨테이너 스타일 */
+#todo-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* 할 일 추가 폼 스타일 */
+form.add-todo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-right: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button.add-button {
+  padding: 10px 20px;
+  background-color: #90B1DB;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.add-button:hover {
+  background-color: #5193ea;
+}
+
+/* 할 일 목록 스타일 */
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+td.task {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input.task-title, input.task-body {
+  flex: 1;
+  margin-right: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"].task-edit, input[type="submit"].task-delete {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+input[type="submit"].task-edit:hover, input[type="submit"].task-delete:hover {
+  opacity: 0.7;
+}

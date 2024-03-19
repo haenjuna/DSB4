@@ -1,0 +1,33 @@
+<%- include('./include/header') %>
+
+<!-- Main -->
+<div id="todo-container">
+  <h2>To-Do List</h2>
+  <form action="/todo" method="POST" class="add-todo">
+    <input type="text" name="title" class="title" placeholder="제목">
+    <input type="text" name="body" class="body" placeholder="내용">
+    <button class="add-button">Add</button>
+  </form>
+  <table class="add-todo">
+    <% todo.forEach(todo => { %>
+      <tr>
+        <td class="task">
+          <form action="/todo/<%=todo._id%>?_method=PUT" method="POST">
+            <input type="checkbox" name="check" class="checkbox" <% if (todo.check) { %> checked <% } %> >
+            <input type="text" name="title" class="task-title" <% if (todo.check) { %> style="text-decoration: line-through;" <% } %> value="<%=todo.title%>">
+            <input type="text" name="body" class="task-body" <% if (todo.check) { %> style="text-decoration: line-through;" <% } %> value="<%=todo.body%>">
+            <input type="submit" class="task-edit" value="✏️">
+          </form>
+          <form action="/todo/<%=todo._id%>?_method=DELETE" method="POST">
+            <input type="submit" class="task-delete" value="❌">
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </table>
+</div>
+
+<!-- /Main -->
+
+<%- include('./include/footer') %>
+

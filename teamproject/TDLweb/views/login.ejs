@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgenDay</title>
+    <link rel="stylesheet" href="/styles/login.css"> <!-- 프론트엔드 CSS 파일 링크 -->
+</head>
+<body>
+    <h1 class="logintext">Login</h1>
+    <form action="/login" method="POST"> <!-- POST 요청으로 변경 -->
+        <div class="row">
+            <label id="Emailtext" class="label" for="Email">E-mail</label>
+            <input type="text" placeholder="이메일"  id="Email" name="Email" required>
+        </div>
+        <br> <!-- 줄 바꿈 -->
+        <div class="row">
+            <label class="label" for="password">Password</label>
+            <input type="password" placeholder="비밀번호" id="password" name="password" required>
+        </div>
+        <br> <!-- 줄 바꿈 -->
+        <button type="submit">Login</button>
+        <a id="register" href="/register">Register</a>
+    </form>
+</body>
+</html>

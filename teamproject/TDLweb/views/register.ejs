@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgenDay</title>
+    <link rel="stylesheet" href="/styles/register.css"> <!-- 프론트엔드 CSS 파일 링크 -->
+</head>
+
+<!-- Main -->
+<main id="site-main">
+
+  <h1 class="registertext">Register</h1>
+
+  <form action="/register" method="POST" class="register">
+    <div class="row">
+      <label id="Nametext" for="name"><b>이름</b></label>
+      <input type="text" placeholder="이름" name="name" id="name">
+    </div>
+    <div class="row">
+      <label id="Emailtext" class="label" for="Email"><b>E-mail</b></label>
+      <input type="text" placeholder="이메일" name="Email" id="Email">
+    </div>
+    <div class="row">
+      <label class="label" for="password"><b>Password</b></label>
+      <input type="password" placeholder="비밀번호" name="password" id="password">
+    </div>
+    <input type="submit" value=" O K " class="register-btn">
+  </form>    
+</main>
+<!-- /Main -->
+
+<%- include('./include/footer') %>
